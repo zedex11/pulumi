@@ -1,0 +1,7 @@
+config:
+  aws:region: us-east-1
+  dev:vpc_name: dev-vpc
+  dev:zone_number: 1
+  dev:vpc_cidr: 172.0.0.0/24
+  dev:number_of_nat_gateways: 0
+  dev:instance_type: t2.micro
