@@ -3,5 +3,5 @@ config:
   prod:vpc_name: prod-vpc
   prod:zone_number: 2
   prod:vpc_cidr: 10.0.0.0/24
-  prod:number_of_nat_gateways: 0
+  prod:number_of_nat_gateways: 1
   prod:instance_type: t2.micro
