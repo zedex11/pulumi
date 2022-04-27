@@ -54,7 +54,7 @@ const instancesSecurityGroup = new awsx.ec2.SecurityGroup(`${env}-instances-sg`,
     }
   );
 
-  const autoScalingGroup = new awsx.autoscaling.AutoScalingGroup("testing", {
+  const autoScalingGroup = new awsx.autoscaling.AutoScalingGroup(`${env}-instance`, {
     templateParameters: { minSize: 1, maxSize: 2 },
     launchConfigurationArgs: { 
         instanceType: instanceType, 
